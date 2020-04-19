@@ -5,7 +5,7 @@ qemu-system-arm -M versatilepb \
                 -cpu arm1176 \
 		        -kernel qemu-rpi-kernel/kernel-qemu-4.14.79-stretch \
                 -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw" \
-                -hda raspbian.img \
+                -hda raspbian.qcow \
                 -m 256 \
                 -dtb qemu-rpi-kernel/versatile-pb.dtb \
                 -no-reboot \
